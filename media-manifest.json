@@ -1,0 +1,231 @@
+{
+  "version": "final-2026-09-10",
+  "pages": 22,
+  "clips": [
+    {
+      "page": 2,
+      "file": "assets/videos/p2_laro_overview.mp4",
+      "poster": "assets/posters/p2_laro_overview.jpg",
+      "title": "LARO-BOT · 대표 동작",
+      "environment": "실물 로봇",
+      "kind": "main",
+      "seconds": 9.9
+    },
+    {
+      "page": 2,
+      "file": "assets/videos/p2_vicpinky_overview.mp4",
+      "poster": "assets/posters/p2_vicpinky_overview.jpg",
+      "title": "VicPinky Carrier · 팀 프로젝트",
+      "environment": "팀 프로젝트 · 관제 화면 요약",
+      "kind": "main",
+      "seconds": 9.4
+    },
+    {
+      "page": 5,
+      "file": "assets/videos/p5_gazebo_pick_place.mp4",
+      "poster": "assets/posters/p5_gazebo_pick_place.jpg",
+      "title": "Gazebo · 집기부터 놓기까지",
+      "environment": "Gazebo 시뮬레이션 · 3배속",
+      "kind": "main",
+      "seconds": 22.133333
+    },
+    {
+      "page": 5,
+      "file": "assets/videos/p5_real_pick_place.mp4",
+      "poster": "assets/posters/p5_real_pick_place.jpg",
+      "title": "실물 · 집기와 놓기",
+      "environment": "실물 로봇 · 원속도",
+      "kind": "main",
+      "seconds": 16
+    },
+    {
+      "page": 6,
+      "file": "assets/videos/p6_language_command.mp4",
+      "poster": "assets/posters/p6_language_command.jpg",
+      "title": "자연어 명령부터 실물 실행까지",
+      "environment": "실물 로봇 + 실행 화면",
+      "kind": "main",
+      "seconds": 28.1
+    },
+    {
+      "page": 7,
+      "file": "assets/videos/p7_object_detection.mp4",
+      "poster": "assets/posters/p7_object_detection.jpg",
+      "title": "다중 물체 인지",
+      "environment": "실물 카메라",
+      "kind": "extra",
+      "seconds": 12
+    },
+    {
+      "page": 7,
+      "file": "assets/videos/p7_scene_state.mp4",
+      "poster": "assets/posters/p7_scene_state.jpg",
+      "title": "카메라 인지와 scene_state",
+      "environment": "실물 카메라 + 상태 출력",
+      "kind": "main",
+      "seconds": 6.857143
+    },
+    {
+      "page": 8,
+      "file": "assets/videos/p8_ik_rviz.mp4",
+      "poster": "assets/posters/p8_ik_rviz.jpg",
+      "title": "실물 움직임과 RViz 경로",
+      "environment": "실물 로봇 + RViz",
+      "kind": "main",
+      "seconds": 5.571429
+    },
+    {
+      "page": 9,
+      "file": "assets/videos/p9_moveto.mp4",
+      "poster": "assets/posters/p9_moveto.jpg",
+      "title": "MoveTo · 등록 자세 이동",
+      "environment": "실물 로봇",
+      "kind": "main",
+      "seconds": 7
+    },
+    {
+      "page": 9,
+      "file": "assets/videos/p9_pick.mp4",
+      "poster": "assets/posters/p9_pick.jpg",
+      "title": "Pick · 물체 집기",
+      "environment": "실물 로봇",
+      "kind": "main",
+      "seconds": 7.5
+    },
+    {
+      "page": 9,
+      "file": "assets/videos/p9_place.mp4",
+      "poster": "assets/posters/p9_place.jpg",
+      "title": "Place · 지정 구역에 놓기",
+      "environment": "실물 로봇",
+      "kind": "main",
+      "seconds": 7.875
+    },
+    {
+      "page": 10,
+      "file": "assets/videos/p10_auto_cleanup.mp4",
+      "poster": "assets/posters/p10_auto_cleanup.jpg",
+      "title": "자가정리 · 빨간 블록",
+      "environment": "실물 로봇",
+      "kind": "main",
+      "seconds": 21
+    },
+    {
+      "page": 11,
+      "file": "assets/videos/p11_regrasp.mp4",
+      "poster": "assets/posters/p11_regrasp.jpg",
+      "title": "파지 실패 후 다시 집기",
+      "environment": "실물 로봇",
+      "kind": "main",
+      "seconds": 12.4
+    },
+    {
+      "page": 12,
+      "file": "assets/videos/p12_undefined_pose.mp4",
+      "poster": "assets/posters/p12_undefined_pose.jpg",
+      "title": "미등록 자세 요청 실패",
+      "environment": "실행 결과 화면",
+      "kind": "main",
+      "seconds": 10.1
+    },
+    {
+      "page": 12,
+      "file": "assets/videos/p12_unreachable.mp4",
+      "poster": "assets/posters/p12_unreachable.jpg",
+      "title": "도달 불가한 요청 중단",
+      "environment": "실행 결과 화면",
+      "kind": "main",
+      "seconds": 15.7
+    },
+    {
+      "page": 13,
+      "file": "assets/videos/p13_coordinate_error.mp4",
+      "poster": "assets/posters/p13_coordinate_error.jpg",
+      "title": "좌표 오차 · 실물 동작",
+      "environment": "실물 로봇",
+      "kind": "main",
+      "seconds": 12
+    },
+    {
+      "page": 13,
+      "file": "assets/videos/p13_gripper_check.mp4",
+      "poster": "assets/posters/p13_gripper_check.jpg",
+      "title": "그리퍼 파지 판정",
+      "environment": "Gazebo 시뮬레이션",
+      "kind": "main",
+      "seconds": 15.625
+    },
+    {
+      "page": 13,
+      "file": "assets/videos/p13_ik_continuity.mp4",
+      "poster": "assets/posters/p13_ik_continuity.jpg",
+      "title": "IK 해의 연속성",
+      "environment": "실물 로봇",
+      "kind": "main",
+      "seconds": 7.125
+    },
+    {
+      "page": 15,
+      "file": "assets/videos/p15_rescue_flow.mp4",
+      "poster": "assets/posters/p15_rescue_flow.jpg",
+      "title": "요구조자 발견 → 임시 노드 → 구호 작업",
+      "environment": "팀 시연 원본 · 정찰 로봇 / 관제 화면",
+      "kind": "main",
+      "seconds": 19.333333
+    },
+    {
+      "page": 17,
+      "file": "assets/videos/p17_task_queue.mp4",
+      "poster": "assets/posters/p17_task_queue.jpg",
+      "title": "로봇별 연속 작업",
+      "environment": "로봇 상태 모사 · FMS 실행 시연",
+      "kind": "main",
+      "seconds": 9.125
+    },
+    {
+      "page": 18,
+      "file": "assets/videos/p18_reassignment.mp4",
+      "poster": "assets/posters/p18_reassignment.jpg",
+      "title": "이동·구호 작업 재배정",
+      "environment": "로봇 상태 모사 · FMS 실행 시연",
+      "kind": "main",
+      "seconds": 17.416667
+    },
+    {
+      "page": 19,
+      "file": "assets/videos/p19_node_selection_map.mp4",
+      "poster": "assets/posters/p19_node_selection_map.jpg",
+      "title": "공유 노드 선택 · 양보 대기 · 재출발",
+      "environment": "관제 기능 시연 · 로봇 상태 모사",
+      "kind": "main",
+      "seconds": 21.566667
+    },
+    {
+      "page": 19,
+      "file": "assets/videos/p19_node_selection.mp4",
+      "poster": "assets/posters/p19_node_selection.jpg",
+      "title": "노드 선택과 작업 상태 · 설명 포함",
+      "environment": "관제 기능 시연 · 로봇 상태 모사 / 설명 카드",
+      "kind": "extra",
+      "seconds": 21.533333
+    },
+    {
+      "page": 20,
+      "file": "assets/videos/p20_auto_charge.mp4",
+      "poster": "assets/posters/p20_auto_charge.jpg",
+      "title": "자동충전 · 작업 완료부터 복귀까지",
+      "environment": "로봇 상태·배터리 입력 모사",
+      "kind": "main",
+      "seconds": 24.166667
+    },
+    {
+      "page": 20,
+      "file": "assets/videos/p20_charging_wait.mp4",
+      "poster": "assets/posters/p20_charging_wait.jpg",
+      "title": "충전소 만석 · 대기 후 진입",
+      "environment": "로봇 상태·배터리 입력 모사",
+      "kind": "extra",
+      "seconds": 18.133333
+    }
+  ]
+}
