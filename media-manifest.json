@@ -1,5 +1,5 @@
 {
-  "version": "final-2026-09-10",
+  "version": "final-2026-09-11",
   "pages": 22,
   "clips": [
     {
@@ -26,8 +26,17 @@
       "poster": "assets/posters/p2_vicpinky_overview.jpg",
       "title": "VicPinky Carrier · 팀 프로젝트",
       "environment": "팀 프로젝트 · 관제 화면 요약",
-      "kind": "main",
+      "kind": "extra",
       "seconds": 9.4
+    },
+    {
+      "page": 2,
+      "file": "assets/videos/vicpinky_carrier.mp4",
+      "poster": "assets/posters/vicpinky_carrier.jpg",
+      "title": "VicPinky Carrier · 소개 동영상 전체",
+      "environment": "팀 프로젝트 전체 시연 · 실물 로봇 / 관제 화면 · 원본 음성 포함",
+      "kind": "main",
+      "seconds": 122.113741
     },
     {
       "page": 5,

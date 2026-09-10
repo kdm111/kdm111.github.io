@@ -3,8 +3,8 @@
 LARO-BOT과 VicPinky Carrier의 개발 과정을 담은 정적 포트폴리오입니다.
 
 - 22개 본문 섹션, PC·모바일 반응형 레이아웃
-- MP4 시연 영상 26개와 영상 모음 페이지
-- 2페이지 소개 동영상 링크 및 LARO-BOT 전체 시연 전용 페이지 (3분 5초)
+- MP4 시연 영상 27개와 영상 모음 페이지
+- 2페이지 소개 동영상 링크 및 두 프로젝트의 전체 시연 전용 페이지
 - 최종 포트폴리오 PDF 다운로드
 - 별도 빌드·서버·DB·패키지 설치 없이 GitHub Pages에서 동작
 
@@ -15,13 +15,14 @@ LARO-BOT과 VicPinky Carrier의 개발 과정을 담은 정적 포트폴리오�
 | `index.html` | 포트폴리오 본문 |
 | `videos.html` | 영상 모음·필터 |
 | `larobot.html` | LARO-BOT 전체 소개 영상·장면 바로가기 |
+| `vicpinky.html` | VicPinky Carrier 전체 소개 영상·장면 바로가기 |
 | `styles.css` | PC·모바일 스타일 |
 | `script.js` | 영상 재생·목차·이미지 확대 |
 | `media-manifest.json` | 영상별 페이지·내용·환경·재생 시간 |
 | `assets/videos/` | MP4 시연 |
 | `assets/posters/` | 영상 썸네일 |
 | `assets/images/` | 사진·다이어그램·아이콘 |
-| `assets/documents/park-junsu-portfolio.pdf` | 2026-09-10 최종 PDF |
+| `assets/documents/park-junsu-portfolio.pdf` | 최종 PDF · 2026-09-11 영상 링크 갱신 |
 | `.nojekyll` | 정적 파일 게시 설정 |
 
 실물 영상과 시뮬레이션, 로봇 상태를 모사한 관제 시연은 영상 캡션에서 구분합니다. 자동 재생 없이 사용자가 재생 버튼을 누르면 영상을 로드합니다.
@@ -39,13 +40,17 @@ LARO-BOT과 VicPinky Carrier의 개발 과정을 담은 정적 포트폴리오�
 
 LARO 소개 영상: `https://kdm111.github.io/larobot.html`
 
-PDF 2페이지의 LARO 버튼은 위 전체 영상으로, VicPinky 버튼은 `videos.html#video-p2_vicpinky_overview`의 기존 짧은 소개 영상으로 연결됩니다. 새 영상 페이지와 링크는 이번 변경을 커밋·푸시하고 Pages 배포가 완료된 후 공개 주소에서 동작합니다.
+VicPinky 소개 영상: `https://kdm111.github.io/vicpinky.html`
+
+PDF 2페이지의 두 버튼은 각각 위 전체 영상 페이지로 연결됩니다. LARO는 3분 5초, VicPinky는 2분 2초입니다. VicPinky 영상은 사용자가 제공한 `vicpinky_carrier.mp4`와 동일한 파일이며, 영상과 음성을 편집하거나 재인코딩하지 않았습니다. 2페이지의 VicPinky 플레이어도 전체 영상으로 교체했습니다. 기존 9.4초 영상은 영상 모음의 보조 영상으로 남겨두었습니다.
+
+새 영상 페이지와 링크는 이번 변경을 커밋·푸시하고 Pages 배포가 완료된 후 공개 주소에서 동작합니다.
 
 이 문서를 작성한 시점에는 커밋·푸시·배포를 수행하지 않았습니다. 배포 설정이 이미 되어 있다면 현재 설정을 확인하고 필요한 경우에만 변경하세요.
 
 ```bash
 git status --short
-git add index.html videos.html larobot.html styles.css script.js favicon.svg media-manifest.json assets .nojekyll .gitignore README.md
+git add index.html videos.html larobot.html vicpinky.html styles.css script.js favicon.svg media-manifest.json assets .nojekyll .gitignore README.md
 git diff --cached --stat
 git commit -m "Update robotics portfolio to final version"
 git push origin master
