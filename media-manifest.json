@@ -4,6 +4,15 @@
   "clips": [
     {
       "page": 2,
+      "file": "assets/videos/larobot_full.mp4",
+      "poster": "assets/posters/larobot_full.png",
+      "title": "LARO-BOT · 소개 동영상 전체",
+      "environment": "기능별 시연 모음 · 실물/Gazebo 표시 · 무음",
+      "kind": "main",
+      "seconds": 185
+    },
+    {
+      "page": 2,
       "file": "assets/videos/p2_laro_overview.mp4",
       "poster": "assets/posters/p2_laro_overview.jpg",
       "title": "LARO-BOT · 대표 동작",

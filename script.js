@@ -17,7 +17,7 @@
         catch (_) { video.controls = true; video.focus(); }
       });
     }
-    video.loop = !reducedMotion.matches;
+    video.loop = video.dataset.loop !== 'false' && !reducedMotion.matches;
     video.addEventListener('play', () => {
       videos.forEach(other => { if (other !== video && !other.paused) other.pause(); });
       if (button) button.hidden = true;
@@ -44,7 +44,42 @@
   document.addEventListener('visibilitychange', () => {
     if (document.hidden) videos.forEach(v => v.pause());
   });
-  reducedMotion.addEventListener?.('change', () => videos.forEach(v => { v.loop = !reducedMotion.matches; }));
+  reducedMotion.addEventListener?.('change', () => videos.forEach(v => { v.loop = v.dataset.loop !== 'false' && !reducedMotion.matches; }));
+
+  document.querySelectorAll('[data-seek]').forEach(button => {
+    button.addEventListener('click', async () => {
+      const video = document.querySelector('#full-demo');
+      if (!video) return;
+      const seconds = Number(button.dataset.seek);
+      video.controls = true;
+      // Move the player into view before playback, so off-screen pausing does not
+      // interrupt a chapter selected from the list below the player.
+      video.scrollIntoView({block:'center', behavior:'instant'});
+      try {
+        const metadata = video.readyState >= 1 ? Promise.resolve() : new Promise((resolve, reject) => {
+          let timeout;
+          const finish = error => {
+            clearTimeout(timeout);
+            video.removeEventListener('loadedmetadata', ready);
+            video.removeEventListener('error', failed);
+            error ? reject(error) : resolve();
+          };
+          const ready = () => finish();
+          const failed = () => finish(new Error('Video unavailable'));
+          video.addEventListener('loadedmetadata', ready, {once:true});
+          video.addEventListener('error', failed, {once:true});
+          timeout = setTimeout(failed, 15000);
+        });
+        // Catch immediately: a rejected play promise must not become unhandled
+        // while metadata is still loading over a mobile connection.
+        const playing = video.play().catch(() => {});
+        await metadata;
+        video.currentTime = Math.min(seconds, video.duration || seconds);
+        await playing;
+        if (video.paused) await video.play();
+      } catch (_) { video.controls = true; }
+    });
+  });
 
   const contents = document.querySelector('.contents');
   contents?.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { contents.open = false; }));
