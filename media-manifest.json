@@ -1,5 +1,5 @@
 {
-  "version": "final-2026-09-11",
+  "version": "v8-media-review-2026-09-11",
   "pages": 22,
   "clips": [
     {
@@ -159,9 +159,9 @@
       "page": 13,
       "file": "assets/videos/p13_coordinate_error.mp4",
       "poster": "assets/posters/p13_coordinate_error.jpg",
-      "title": "좌표 오차 · 실물 동작",
-      "environment": "실물 로봇",
-      "kind": "main",
+      "title": "실물 정상 동작 참고 / 좌표 측정 관련",
+      "environment": "실물 정상 동작 / 오류 재현이나 개선 비교 영상 아님",
+      "kind": "extra",
       "seconds": 12
     },
     {
@@ -177,9 +177,9 @@
       "page": 13,
       "file": "assets/videos/p13_ik_continuity.mp4",
       "poster": "assets/posters/p13_ik_continuity.jpg",
-      "title": "IK 해의 연속성",
-      "environment": "실물 로봇",
-      "kind": "main",
+      "title": "실물 정상 동작 참고 / IK 관련",
+      "environment": "실물 정상 동작 / 오류 재현이나 개선 비교 영상 아님",
+      "kind": "extra",
       "seconds": 7.125
     },
     {
@@ -231,10 +231,14 @@
       "page": 20,
       "file": "assets/videos/p20_auto_charge.mp4",
       "poster": "assets/posters/p20_auto_charge.jpg",
-      "title": "자동충전 · 작업 완료부터 복귀까지",
-      "environment": "로봇 상태·배터리 입력 모사",
+      "title": "작업 완료 후 충전소 이동과 복귀",
+      "environment": "관제 기능 시연 / 로봇 상태와 배터리 입력 모사",
       "kind": "main",
-      "seconds": 24.166667
+      "seconds": 29.667,
+      "topology": {
+        "nodes": 17,
+        "edges": 20
+      }
     },
     {
       "page": 20,
@@ -244,6 +248,22 @@
       "environment": "로봇 상태·배터리 입력 모사",
       "kind": "extra",
       "seconds": 18.133333
+    },
+    {
+      "page": 16,
+      "file": "assets/videos/p16_robot_tracking.mp4",
+      "poster": "assets/posters/p16_robot_tracking.jpg",
+      "title": "여러 로봇의 위치와 경로 추적",
+      "environment": "관제 기능 시연 / 로봇 상태 모사",
+      "kind": "main",
+      "seconds": 21.292,
+      "topology": {
+        "nodes": 17,
+        "edges": 20
+      }
     }
+  ],
+  "pending_review_pages": [
+    18
   ]
 }
