@@ -1,5 +1,5 @@
 {
-  "version": "v8-media-review-2026-09-11",
+  "version": "v8-reassignment-fix-2026-09-11",
   "pages": 22,
   "clips": [
     {
@@ -204,10 +204,14 @@
       "page": 18,
       "file": "assets/videos/p18_reassignment.mp4",
       "poster": "assets/posters/p18_reassignment.jpg",
-      "title": "이동·구호 작업 재배정",
-      "environment": "로봇 상태 모사 · FMS 실행 시연",
+      "title": "오류 후 재배정과 새 로봇의 지도 이동",
+      "environment": "관제 기능 시연 / 로봇 상태 모사",
       "kind": "main",
-      "seconds": 17.416667
+      "seconds": 13.417,
+      "topology": {
+        "nodes": 17,
+        "edges": 20
+      }
     },
     {
       "page": 19,
@@ -263,7 +267,5 @@
       }
     }
   ],
-  "pending_review_pages": [
-    18
-  ]
+  "pending_review_pages": []
 }
