@@ -1,5 +1,5 @@
 {
-  "version": "v8-reassignment-fix-2026-09-11",
+  "version": "v9-experience-scope-2026-09-11",
   "pages": 22,
   "clips": [
     {
@@ -69,7 +69,7 @@
       "page": 7,
       "file": "assets/videos/p7_object_detection.mp4",
       "poster": "assets/posters/p7_object_detection.jpg",
-      "title": "다중 물체 인지",
+      "title": "HSV 색 범위 기반 물체 인식",
       "environment": "실물 카메라",
       "kind": "extra",
       "seconds": 12
@@ -78,8 +78,8 @@
       "page": 7,
       "file": "assets/videos/p7_scene_state.mp4",
       "poster": "assets/posters/p7_scene_state.jpg",
-      "title": "카메라 인지와 scene_state",
-      "environment": "실물 카메라 + 상태 출력",
+      "title": "카메라 인식 결과와 scene_state",
+      "environment": "실물 카메라 + ROS 2 토픽 출력",
       "kind": "main",
       "seconds": 6.857143
     },
@@ -87,7 +87,7 @@
       "page": 8,
       "file": "assets/videos/p8_ik_rviz.mp4",
       "poster": "assets/posters/p8_ik_rviz.jpg",
-      "title": "실물 움직임과 RViz 경로",
+      "title": "실물 로봇 동작과 경로 시각화",
       "environment": "실물 로봇 + RViz",
       "kind": "main",
       "seconds": 5.571429
@@ -159,8 +159,8 @@
       "page": 13,
       "file": "assets/videos/p13_coordinate_error.mp4",
       "poster": "assets/posters/p13_coordinate_error.jpg",
-      "title": "실물 정상 동작 참고 / 좌표 측정 관련",
-      "environment": "실물 정상 동작 / 오류 재현이나 개선 비교 영상 아님",
+      "title": "실물 좌표 오차 확인 과정",
+      "environment": "실물 정상 동작 / 오차 측정이나 개선 비교 영상 아님",
       "kind": "extra",
       "seconds": 12
     },
@@ -168,16 +168,16 @@
       "page": 13,
       "file": "assets/videos/p13_gripper_check.mp4",
       "poster": "assets/posters/p13_gripper_check.jpg",
-      "title": "그리퍼 파지 판정",
+      "title": "그리퍼 관절값 기반 파지 판정",
       "environment": "Gazebo 시뮬레이션",
-      "kind": "main",
+      "kind": "extra",
       "seconds": 15.625
     },
     {
       "page": 13,
       "file": "assets/videos/p13_ik_continuity.mp4",
       "poster": "assets/posters/p13_ik_continuity.jpg",
-      "title": "실물 정상 동작 참고 / IK 관련",
+      "title": "IK 해 연속성 적용 후 동작",
       "environment": "실물 정상 동작 / 오류 재현이나 개선 비교 영상 아님",
       "kind": "extra",
       "seconds": 7.125
@@ -267,5 +267,10 @@
       }
     }
   ],
-  "pending_review_pages": []
+  "pending_review_pages": [],
+  "download": {
+    "file": "assets/documents/park-junsu-portfolio.pdf",
+    "format": "pdf",
+    "source": "portfolio_v9/포트폴리오.pdf"
+  }
 }

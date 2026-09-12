@@ -1,11 +1,11 @@
 # 박준수 · Robotics Portfolio
 
-LARO-BOT과 VicPinky Carrier의 개발 과정을 담은 정적 포트폴리오입니다.
+LARO-BOT의 자연어 명령, 로봇팔 실행과 실패 복구, VicPinky Carrier의 FMS 개발을 담은 정적 포트폴리오입니다.
 
 - 22개 본문 섹션, PC·모바일 반응형 레이아웃
-- MP4 시연 영상 27개와 영상 모음 페이지
+- MP4 시연 영상 28개와 영상 모음 페이지
 - 2페이지 소개 동영상 링크 및 두 프로젝트의 전체 시연 전용 페이지
-- 최종 포트폴리오 PDF 다운로드
+- 최종 제출 내용과 동일한 v9 PDF 다운로드
 - 별도 빌드·서버·DB·패키지 설치 없이 GitHub Pages에서 동작
 
 ## 파일
@@ -22,7 +22,7 @@ LARO-BOT과 VicPinky Carrier의 개발 과정을 담은 정적 포트폴리오�
 | `assets/videos/` | MP4 시연 |
 | `assets/posters/` | 영상 썸네일 |
 | `assets/images/` | 사진·다이어그램·아이콘 |
-| `assets/documents/park-junsu-portfolio.pdf` | 최종 PDF · 2026-09-11 영상 링크 갱신 |
+| `assets/documents/park-junsu-portfolio.pdf` | 최종 제출용 v9 PDF |
 | `.nojekyll` | 정적 파일 게시 설정 |
 
 실물 영상과 시뮬레이션, 로봇 상태를 모사한 관제 시연은 영상 캡션에서 구분합니다. 자동 재생 없이 사용자가 재생 버튼을 누르면 영상을 로드합니다.
@@ -42,7 +42,7 @@ LARO 소개 영상: `https://kdm111.github.io/larobot.html`
 
 VicPinky 소개 영상: `https://kdm111.github.io/vicpinky.html`
 
-PDF 2페이지의 두 버튼은 각각 위 전체 영상 페이지로 연결됩니다. LARO는 3분 5초, VicPinky는 2분 2초입니다. VicPinky 영상은 사용자가 제공한 `vicpinky_carrier.mp4`와 동일한 파일이며, 영상과 음성을 편집하거나 재인코딩하지 않았습니다. 2페이지의 VicPinky 플레이어도 전체 영상으로 교체했습니다. 기존 9.4초 영상은 영상 모음의 보조 영상으로 남겨두었습니다.
+포트폴리오 2페이지의 두 버튼은 각각 위 전체 영상 페이지로 연결됩니다. LARO는 3분 5초, VicPinky는 2분 2초입니다. VicPinky 영상은 사용자가 제공한 `vicpinky_carrier.mp4`와 동일한 파일이며, 영상과 음성을 편집하거나 재인코딩하지 않았습니다. 2페이지의 VicPinky 플레이어도 전체 영상으로 교체했습니다. 기존 9.4초 영상은 영상 모음의 보조 영상으로 남겨두었습니다.
 
 새 영상 페이지와 링크는 이번 변경을 커밋·푸시하고 Pages 배포가 완료된 후 공개 주소에서 동작합니다.
 
@@ -67,3 +67,11 @@ git push origin master
 현재 HTML은 기존 React 앱의 `/static/js/`를 사용하지 않습니다. 이전 사이트의 `static/`, `asset-manifest.json`, `manifest.json`, 기본 로고는 복구를 위해 그대로 두었으며 새 사이트에서는 참조하지 않습니다. 삭제는 필수가 아닙니다.
 
 이력서·자기소개서·개발 환경 설정·로컬 검토 기록은 이번 사이트에 추가하지 않았습니다.
+
+## v9 최종 내용 반영
+
+LARO 설명은 최종 제출본에 맞춰 자연어 계획, 카메라 인식, IK 후보 선택, 실패 복구와 실물 문제 해결 과정을 담았습니다. C++과 Python 표기, P3 실패 복구 아이콘, P2~13 문구, 목차와 전체 영상 안내를 반영했습니다. 전체 영상의 촬영 장면, 순서와 3분 5초 길이는 유지했습니다.
+
+최신 `portfolio_v9/포트폴리오.pdf`를 `assets/documents/park-junsu-portfolio.pdf`로 반영하고, 네 HTML의 다운로드 경로와 라벨을 PDF로 통일했습니다. LARO 기술 표기는 제출 PDF와 같이 C++ / Python, Action, Gazebo, Ollama, Docker를 사용하며 MoveIt 2를 별도 기술 배지로 표시하지 않습니다.
+
+이 작업은 로컬 변경만 준비했습니다. 커밋과 푸시는 사용자가 진행합니다.

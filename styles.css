@@ -348,3 +348,6 @@ code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:.88em;
 /* 401 map recordings: preserve the complete graph on desktop and mobile. */
 .media[data-media="p16_robot_tracking"] .player video{aspect-ratio:840/1080;max-height:680px;background:#f7f7f5}
 .media[data-media="p18_reassignment"] .player video,.media[data-media="p20_auto_charge"] .player video{aspect-ratio:1440/1000;background:#f7f7f5}
+
+/* v9: identical simple vector icons in the deck and the responsive page. */
+#p3 .icon-item svg{display:block;width:48px;height:48px;flex:none;margin:0 auto 10px}
