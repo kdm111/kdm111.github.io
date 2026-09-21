@@ -1,77 +1,43 @@
 # 박준수 · Robotics Portfolio
 
-LARO-BOT의 자연어 명령, 로봇팔 실행과 실패 복구, VicPinky Carrier의 FMS 개발을 담은 정적 포트폴리오입니다.
+2026년 9월 21일의 25페이지 포트폴리오를 반영한 GitHub Pages 사이트입니다.
 
-- 22개 본문 섹션, PC·모바일 반응형 레이아웃
-- MP4 시연 영상 28개와 영상 모음 페이지
-- 2페이지 소개 동영상 링크 및 두 프로젝트의 전체 시연 전용 페이지
-- 최종 제출 내용과 동일한 v9 PDF 다운로드
-- 별도 빌드·서버·DB·패키지 설치 없이 GitHub Pages에서 동작
+- PC: PPTX의 도형 좌표, 이미지, 문구, 색상을 SVG와 HTML로 재현합니다. 본문 텍스트는 선택할 수 있고, 영상은 원래 위치에서 재생됩니다.
+- 모바일·태블릿(900px 이하): 읽기 좋은 본문, 가로 넘김 카드, 두 열의 흐름도, 모델 비교 표를 사용합니다. 시연 버튼을 누르면 우측 영상 패널이 열리며 스와이프·이전/다음 버튼으로 영상을 전환합니다.
+- 영상 30개: 화면에 보이는 영상 하나만 무음으로 자동 재생합니다. 기본 영상 컨트롤로 재생·일시정지·탐색·음량·전체 화면을 조작할 수 있습니다. 화면 밖 영상과 백그라운드 탭은 재생을 멈춥니다.
+- 상단 자동 재생 설정은 브라우저에 저장됩니다. 동작 줄이기·데이터 절약 설정에서는 자동 재생을 기본으로 끕니다. 브라우저가 자동 재생을 차단해도 수동 재생이 가능합니다.
+- PPTX 다운로드는 이번에 링크를 수정한 25페이지 파일입니다.
 
 ## 파일
 
 | 파일 | 용도 |
 | --- | --- |
-| `index.html` | 포트폴리오 본문 |
-| `videos.html` | 영상 모음·필터 |
-| `larobot.html` | LARO-BOT 전체 소개 영상·장면 바로가기 |
-| `vicpinky.html` | VicPinky Carrier 전체 소개 영상·장면 바로가기 |
-| `styles.css` | PC·모바일 스타일 |
-| `script.js` | 영상 재생·목차·이미지 확대 |
-| `media-manifest.json` | 영상별 페이지·내용·환경·재생 시간 |
-| `assets/videos/` | MP4 시연 |
-| `assets/posters/` | 영상 썸네일 |
-| `assets/images/` | 사진·다이어그램·아이콘 |
-| `assets/documents/park-junsu-portfolio.pdf` | 최종 제출용 v9 PDF |
-| `.nojekyll` | 정적 파일 게시 설정 |
+| `index.html` | 원본 슬라이드 배치와 모바일 본문 |
+| `styles.css` | 원본 배치, 반응형 화면, 영상 패널 |
+| `script.js` | 재생 관리, 영상 패널, 목차, 사진 확대, 영상 필터 |
+| `videos.html` | 시연·보조 영상 30개 |
+| `watch.html?clip=영상ID` | PPTX에서 연결되는 개별 영상 재생 페이지 |
+| `larobot.html`, `vicpinky.html` | 프로젝트 전체 소개 영상과 장면 바로가기 |
+| `media-manifest.json` | 영상 파일, 최신 페이지 번호, 환경, 길이 |
+| `slide-media.json` | 슬라이드와 영상 ID의 대응표 |
+| `assets/deck-media/` | 최신 PPTX에서 가져온 원본 이미지 |
+| `assets/videos/`, `assets/posters/` | 영상과 대표 프레임 |
+| `assets/documents/park-junsu-portfolio-v9.pptx` | 수정된 최신 PPTX |
 
-실물 영상과 시뮬레이션, 로봇 상태를 모사한 관제 시연은 영상 캡션에서 구분합니다. 자동 재생 없이 사용자가 재생 버튼을 누르면 영상을 로드합니다.
+빌드 도구, 서버, 데이터베이스 없이 GitHub Pages의 `master` 브랜치 루트에서 서비스합니다.
 
-## GitHub Pages
+## 이번 영상·링크 변경
 
-이 저장소의 현재 브랜치는 `master`입니다.
+19페이지의 **명령 완료 조건 확인**, 23페이지의 **가상 로봇 검증** 녹화를 추가했습니다. 실제 FMS를 가상 로봇과 테스트 입력으로 실행한 영상이며 실물 촬영과 구분해 표시합니다.
 
-1. 변경 사항을 커밋하고 `origin/master`에 푸시합니다.
-2. GitHub 저장소 **Settings → Pages**로 이동합니다.
-3. Source는 **Deploy from a branch**, Branch는 **master**, Folder는 **/(root)**로 설정합니다.
-4. Save 후 Pages 배포 완료를 확인합니다.
+기존 내장 영상 8개는 웹 MP4와 영상 스트림 SHA-256이 일치합니다. 기존 MP4 경로를 유지하고, PPTX의 MP4 링크는 해당 영상을 자동·수동으로 재생할 수 있는 `watch.html` 주소로 연결했습니다. 14페이지의 영상 3개와 19·23페이지의 화면·제목에 빠진 링크를 추가했습니다. 20·22페이지는 대표 프레임을 대조해 기존 영상이 맞음을 확인했습니다.
 
-게시 주소: `https://kdm111.github.io/`
+원본 슬라이드는 16:9 좌표를 사용합니다. 영상을 제외한 사진과 도형은 원본 좌표를 따르며, 웹 글꼴은 Arial / Apple SD Gothic Neo 등을 대체 글꼴로 사용합니다. 원본 Arimo의 자간과 굵기를 반영하되, 운영체제의 한글 글꼴에 따라 미세한 차이가 있을 수 있습니다.
 
-LARO 소개 영상: `https://kdm111.github.io/larobot.html`
+이전 PDF·영상·React 빌드 파일은 외부 링크 호환성을 위해 보관하고 있습니다. 사이트 다운로드 버튼은 최신 PPTX를 가리킵니다.
 
-VicPinky 소개 영상: `https://kdm111.github.io/vicpinky.html`
+게시 주소: [kdm111.github.io](https://kdm111.github.io/)
 
-포트폴리오 2페이지의 두 버튼은 각각 위 전체 영상 페이지로 연결됩니다. LARO는 3분 5초, VicPinky는 2분 2초입니다. VicPinky 영상은 사용자가 제공한 `vicpinky_carrier.mp4`와 동일한 파일이며, 영상과 음성을 편집하거나 재인코딩하지 않았습니다. 2페이지의 VicPinky 플레이어도 전체 영상으로 교체했습니다. 기존 9.4초 영상은 영상 모음의 보조 영상으로 남겨두었습니다.
+## 검증
 
-새 영상 페이지와 링크는 이번 변경을 커밋·푸시하고 Pages 배포가 완료된 후 공개 주소에서 동작합니다.
-
-이 문서를 작성한 시점에는 커밋·푸시·배포를 수행하지 않았습니다. 배포 설정이 이미 되어 있다면 현재 설정을 확인하고 필요한 경우에만 변경하세요.
-
-```bash
-git status --short
-git add index.html videos.html larobot.html vicpinky.html styles.css script.js favicon.svg media-manifest.json assets .nojekyll .gitignore README.md
-git diff --cached --stat
-git commit -m "Update robotics portfolio to final version"
-git push origin master
-```
-
-위 명령은 이 저장소 폴더 안에서 실행하세요. 상위 프로젝트 전체를 GitHub Pages 저장소에 올리지 마세요.
-
-## 수정·확인
-
-문구는 `index.html`, 영상 목록은 `videos.html` 및 `media-manifest.json`에서 수정할 수 있습니다. MP4를 바꾸면 파일명·썸네일·본문과 영상 모음의 경로를 함께 확인하세요.
-
-동영상은 `<video controls playsinline>`으로 재생합니다. CSS의 `object-fit: contain`으로 영상 내부 자막과 화면을 자르지 않습니다. JavaScript를 끄더라도 본문과 기본 영상 컨트롤은 표시됩니다.
-
-현재 HTML은 기존 React 앱의 `/static/js/`를 사용하지 않습니다. 이전 사이트의 `static/`, `asset-manifest.json`, `manifest.json`, 기본 로고는 복구를 위해 그대로 두었으며 새 사이트에서는 참조하지 않습니다. 삭제는 필수가 아닙니다.
-
-이력서·자기소개서·개발 환경 설정·로컬 검토 기록은 이번 사이트에 추가하지 않았습니다.
-
-## v9 최종 내용 반영
-
-LARO 설명은 최종 제출본에 맞춰 자연어 계획, 카메라 인식, IK 후보 선택, 실패 복구와 실물 문제 해결 과정을 담았습니다. C++과 Python 표기, P3 실패 복구 아이콘, P2~13 문구, 목차와 전체 영상 안내를 반영했습니다. 전체 영상의 촬영 장면, 순서와 3분 5초 길이는 유지했습니다.
-
-최신 `portfolio_v9/포트폴리오.pdf`를 `assets/documents/park-junsu-portfolio.pdf`로 반영하고, 네 HTML의 다운로드 경로와 라벨을 PDF로 통일했습니다. LARO 기술 표기는 제출 PDF와 같이 C++ / Python, Action, Gazebo, Ollama, Docker를 사용하며 MoveIt 2를 별도 기술 배지로 표시하지 않습니다.
-
-이 작업은 로컬 변경만 준비했습니다. 커밋과 푸시는 사용자가 진행합니다.
+Chrome 48개, WebKit 23개의 브라우저 검사와 PPTX·영상 66개 검사를 통과했습니다. 320–1440px 화면에서 가로 넘침, 자동·수동 재생, 사용자의 일시정지 유지, 화면 밖 정지, 영상 패널 전환, 키보드·포커스 복귀, 필터, 장면 이동, 다운로드를 확인했습니다. Chrome에서 전체 30개 영상을, WebKit에서 신규 영상과 대표 형식 5개를 재생했습니다. 실제 iPhone·Android 기기 및 PowerPoint 앱의 슬라이드 쇼는 별도로 실행하지 않았습니다.

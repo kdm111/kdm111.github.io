@@ -1,0 +1,63 @@
+{
+  "2": [
+    "larobot_full",
+    "vicpinky_carrier"
+  ],
+  "5": [
+    "p5_gazebo_pick_place",
+    "p5_real_pick_place"
+  ],
+  "6": [
+    "p6_language_command"
+  ],
+  "8": [
+    "p7_scene_state"
+  ],
+  "9": [
+    "p8_ik_rviz"
+  ],
+  "10": [
+    "p9_pick",
+    "p9_place",
+    "p9_moveto"
+  ],
+  "11": [
+    "p10_auto_cleanup"
+  ],
+  "12": [
+    "p11_regrasp"
+  ],
+  "13": [
+    "p12_unreachable",
+    "p12_undefined_pose"
+  ],
+  "14": [
+    "p13_coordinate_error",
+    "p13_gripper_check",
+    "p13_ik_continuity"
+  ],
+  "16": [
+    "p15_rescue_flow"
+  ],
+  "17": [
+    "p16_robot_tracking"
+  ],
+  "18": [
+    "p17_task_queue"
+  ],
+  "19": [
+    "p19_command_completion"
+  ],
+  "20": [
+    "p18_reassignment"
+  ],
+  "21": [
+    "p19_node_selection_map"
+  ],
+  "22": [
+    "p20_auto_charge"
+  ],
+  "23": [
+    "p23_virtual_robot_validation"
+  ]
+}

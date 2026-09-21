@@ -1,6 +1,6 @@
 {
-  "version": "v9-experience-scope-2026-09-11",
-  "pages": 22,
+  "version": "2026-09-21",
+  "pages": 25,
   "clips": [
     {
       "page": 2,
@@ -9,7 +9,10 @@
       "title": "LARO-BOT · 소개 동영상 전체",
       "environment": "기능별 시연 모음 · 실물/Gazebo 표시 · 무음",
       "kind": "main",
-      "seconds": 185
+      "seconds": 185,
+      "id": "larobot_full",
+      "project": "laro",
+      "watch": "watch.html?clip=larobot_full"
     },
     {
       "page": 2,
@@ -18,7 +21,10 @@
       "title": "LARO-BOT · 대표 동작",
       "environment": "실물 로봇",
       "kind": "main",
-      "seconds": 9.9
+      "seconds": 9.9,
+      "id": "p2_laro_overview",
+      "project": "laro",
+      "watch": "watch.html?clip=p2_laro_overview"
     },
     {
       "page": 2,
@@ -27,7 +33,10 @@
       "title": "VicPinky Carrier · 팀 프로젝트",
       "environment": "팀 프로젝트 · 관제 화면 요약",
       "kind": "extra",
-      "seconds": 9.4
+      "seconds": 9.4,
+      "id": "p2_vicpinky_overview",
+      "project": "vic",
+      "watch": "watch.html?clip=p2_vicpinky_overview"
     },
     {
       "page": 2,
@@ -36,7 +45,10 @@
       "title": "VicPinky Carrier · 소개 동영상 전체",
       "environment": "팀 프로젝트 전체 시연 · 실물 로봇 / 관제 화면 · 원본 음성 포함",
       "kind": "main",
-      "seconds": 122.113741
+      "seconds": 122.113741,
+      "id": "vicpinky_carrier",
+      "project": "vic",
+      "watch": "watch.html?clip=vicpinky_carrier"
     },
     {
       "page": 5,
@@ -45,7 +57,10 @@
       "title": "Gazebo · 집기부터 놓기까지",
       "environment": "Gazebo 시뮬레이션 · 3배속",
       "kind": "main",
-      "seconds": 22.133333
+      "seconds": 22.133333,
+      "id": "p5_gazebo_pick_place",
+      "project": "laro",
+      "watch": "watch.html?clip=p5_gazebo_pick_place"
     },
     {
       "page": 5,
@@ -54,7 +69,10 @@
       "title": "실물 · 집기와 놓기",
       "environment": "실물 로봇 · 원속도",
       "kind": "main",
-      "seconds": 16
+      "seconds": 16,
+      "id": "p5_real_pick_place",
+      "project": "laro",
+      "watch": "watch.html?clip=p5_real_pick_place"
     },
     {
       "page": 6,
@@ -63,145 +81,193 @@
       "title": "자연어 명령부터 실물 실행까지",
       "environment": "실물 로봇 + 실행 화면",
       "kind": "main",
-      "seconds": 28.1
+      "seconds": 28.1,
+      "id": "p6_language_command",
+      "project": "laro",
+      "watch": "watch.html?clip=p6_language_command"
     },
     {
-      "page": 7,
+      "page": 8,
       "file": "assets/videos/p7_object_detection.mp4",
       "poster": "assets/posters/p7_object_detection.jpg",
       "title": "HSV 색 범위 기반 물체 인식",
       "environment": "실물 카메라",
       "kind": "extra",
-      "seconds": 12
+      "seconds": 12,
+      "id": "p7_object_detection",
+      "project": "laro",
+      "watch": "watch.html?clip=p7_object_detection"
     },
     {
-      "page": 7,
+      "page": 8,
       "file": "assets/videos/p7_scene_state.mp4",
       "poster": "assets/posters/p7_scene_state.jpg",
       "title": "카메라 인식 결과와 scene_state",
       "environment": "실물 카메라 + ROS 2 토픽 출력",
       "kind": "main",
-      "seconds": 6.857143
+      "seconds": 6.857143,
+      "id": "p7_scene_state",
+      "project": "laro",
+      "watch": "watch.html?clip=p7_scene_state"
     },
     {
-      "page": 8,
+      "page": 9,
       "file": "assets/videos/p8_ik_rviz.mp4",
       "poster": "assets/posters/p8_ik_rviz.jpg",
       "title": "실물 로봇 동작과 경로 시각화",
       "environment": "실물 로봇 + RViz",
       "kind": "main",
-      "seconds": 5.571429
+      "seconds": 5.571429,
+      "id": "p8_ik_rviz",
+      "project": "laro",
+      "watch": "watch.html?clip=p8_ik_rviz"
     },
     {
-      "page": 9,
+      "page": 10,
       "file": "assets/videos/p9_moveto.mp4",
       "poster": "assets/posters/p9_moveto.jpg",
       "title": "MoveTo · 등록 자세 이동",
       "environment": "실물 로봇",
       "kind": "main",
-      "seconds": 7
+      "seconds": 7,
+      "id": "p9_moveto",
+      "project": "laro",
+      "watch": "watch.html?clip=p9_moveto"
     },
     {
-      "page": 9,
+      "page": 10,
       "file": "assets/videos/p9_pick.mp4",
       "poster": "assets/posters/p9_pick.jpg",
       "title": "Pick · 물체 집기",
       "environment": "실물 로봇",
       "kind": "main",
-      "seconds": 7.5
+      "seconds": 7.5,
+      "id": "p9_pick",
+      "project": "laro",
+      "watch": "watch.html?clip=p9_pick"
     },
     {
-      "page": 9,
+      "page": 10,
       "file": "assets/videos/p9_place.mp4",
       "poster": "assets/posters/p9_place.jpg",
       "title": "Place · 지정 구역에 놓기",
       "environment": "실물 로봇",
       "kind": "main",
-      "seconds": 7.875
+      "seconds": 7.875,
+      "id": "p9_place",
+      "project": "laro",
+      "watch": "watch.html?clip=p9_place"
     },
     {
-      "page": 10,
+      "page": 11,
       "file": "assets/videos/p10_auto_cleanup.mp4",
       "poster": "assets/posters/p10_auto_cleanup.jpg",
       "title": "자가정리 · 빨간 블록",
       "environment": "실물 로봇",
       "kind": "main",
-      "seconds": 21
+      "seconds": 21,
+      "id": "p10_auto_cleanup",
+      "project": "laro",
+      "watch": "watch.html?clip=p10_auto_cleanup"
     },
     {
-      "page": 11,
+      "page": 12,
       "file": "assets/videos/p11_regrasp.mp4",
       "poster": "assets/posters/p11_regrasp.jpg",
       "title": "파지 실패 후 다시 집기",
       "environment": "실물 로봇",
       "kind": "main",
-      "seconds": 12.4
+      "seconds": 12.4,
+      "id": "p11_regrasp",
+      "project": "laro",
+      "watch": "watch.html?clip=p11_regrasp"
     },
     {
-      "page": 12,
+      "page": 13,
       "file": "assets/videos/p12_undefined_pose.mp4",
       "poster": "assets/posters/p12_undefined_pose.jpg",
       "title": "미등록 자세 요청 실패",
       "environment": "실행 결과 화면",
       "kind": "main",
-      "seconds": 10.1
+      "seconds": 10.1,
+      "id": "p12_undefined_pose",
+      "project": "laro",
+      "watch": "watch.html?clip=p12_undefined_pose"
     },
     {
-      "page": 12,
+      "page": 13,
       "file": "assets/videos/p12_unreachable.mp4",
       "poster": "assets/posters/p12_unreachable.jpg",
       "title": "도달 불가한 요청 중단",
       "environment": "실행 결과 화면",
       "kind": "main",
-      "seconds": 15.7
+      "seconds": 15.7,
+      "id": "p12_unreachable",
+      "project": "laro",
+      "watch": "watch.html?clip=p12_unreachable"
     },
     {
-      "page": 13,
+      "page": 14,
       "file": "assets/videos/p13_coordinate_error.mp4",
       "poster": "assets/posters/p13_coordinate_error.jpg",
       "title": "실물 좌표 오차 확인 과정",
       "environment": "실물 정상 동작 / 오차 측정이나 개선 비교 영상 아님",
-      "kind": "extra",
-      "seconds": 12
+      "kind": "main",
+      "seconds": 12,
+      "id": "p13_coordinate_error",
+      "project": "laro",
+      "watch": "watch.html?clip=p13_coordinate_error"
     },
     {
-      "page": 13,
+      "page": 14,
       "file": "assets/videos/p13_gripper_check.mp4",
       "poster": "assets/posters/p13_gripper_check.jpg",
       "title": "그리퍼 관절값 기반 파지 판정",
       "environment": "Gazebo 시뮬레이션",
-      "kind": "extra",
-      "seconds": 15.625
+      "kind": "main",
+      "seconds": 15.625,
+      "id": "p13_gripper_check",
+      "project": "laro",
+      "watch": "watch.html?clip=p13_gripper_check"
     },
     {
-      "page": 13,
+      "page": 14,
       "file": "assets/videos/p13_ik_continuity.mp4",
       "poster": "assets/posters/p13_ik_continuity.jpg",
       "title": "IK 해 연속성 적용 후 동작",
       "environment": "실물 정상 동작 / 오류 재현이나 개선 비교 영상 아님",
-      "kind": "extra",
-      "seconds": 7.125
+      "kind": "main",
+      "seconds": 7.125,
+      "id": "p13_ik_continuity",
+      "project": "laro",
+      "watch": "watch.html?clip=p13_ik_continuity"
     },
     {
-      "page": 15,
+      "page": 16,
       "file": "assets/videos/p15_rescue_flow.mp4",
       "poster": "assets/posters/p15_rescue_flow.jpg",
       "title": "요구조자 발견 → 임시 노드 → 구호 작업",
       "environment": "팀 시연 원본 · 정찰 로봇 / 관제 화면",
       "kind": "main",
-      "seconds": 19.333333
+      "seconds": 19.333333,
+      "id": "p15_rescue_flow",
+      "project": "vic",
+      "watch": "watch.html?clip=p15_rescue_flow"
     },
     {
-      "page": 17,
+      "page": 18,
       "file": "assets/videos/p17_task_queue.mp4",
       "poster": "assets/posters/p17_task_queue.jpg",
       "title": "로봇별 연속 작업",
       "environment": "로봇 상태 모사 · FMS 실행 시연",
       "kind": "main",
-      "seconds": 9.125
+      "seconds": 9.125,
+      "id": "p17_task_queue",
+      "project": "vic",
+      "watch": "watch.html?clip=p17_task_queue"
     },
     {
-      "page": 18,
+      "page": 20,
       "file": "assets/videos/p18_reassignment.mp4",
       "poster": "assets/posters/p18_reassignment.jpg",
       "title": "오류 후 재배정과 새 로봇의 지도 이동",
@@ -211,28 +277,37 @@
       "topology": {
         "nodes": 17,
         "edges": 20
-      }
+      },
+      "id": "p18_reassignment",
+      "project": "vic",
+      "watch": "watch.html?clip=p18_reassignment"
     },
     {
-      "page": 19,
+      "page": 21,
       "file": "assets/videos/p19_node_selection_map.mp4",
       "poster": "assets/posters/p19_node_selection_map.jpg",
       "title": "공유 노드 선택 · 양보 대기 · 재출발",
       "environment": "관제 기능 시연 · 로봇 상태 모사",
       "kind": "main",
-      "seconds": 21.566667
+      "seconds": 21.566667,
+      "id": "p19_node_selection_map",
+      "project": "vic",
+      "watch": "watch.html?clip=p19_node_selection_map"
     },
     {
-      "page": 19,
+      "page": 21,
       "file": "assets/videos/p19_node_selection.mp4",
       "poster": "assets/posters/p19_node_selection.jpg",
       "title": "노드 선택과 작업 상태 · 설명 포함",
       "environment": "관제 기능 시연 · 로봇 상태 모사 / 설명 카드",
       "kind": "extra",
-      "seconds": 21.533333
+      "seconds": 21.533333,
+      "id": "p19_node_selection",
+      "project": "vic",
+      "watch": "watch.html?clip=p19_node_selection"
     },
     {
-      "page": 20,
+      "page": 22,
       "file": "assets/videos/p20_auto_charge.mp4",
       "poster": "assets/posters/p20_auto_charge.jpg",
       "title": "작업 완료 후 충전소 이동과 복귀",
@@ -242,19 +317,25 @@
       "topology": {
         "nodes": 17,
         "edges": 20
-      }
+      },
+      "id": "p20_auto_charge",
+      "project": "vic",
+      "watch": "watch.html?clip=p20_auto_charge"
     },
     {
-      "page": 20,
+      "page": 22,
       "file": "assets/videos/p20_charging_wait.mp4",
       "poster": "assets/posters/p20_charging_wait.jpg",
       "title": "충전소 만석 · 대기 후 진입",
       "environment": "로봇 상태·배터리 입력 모사",
       "kind": "extra",
-      "seconds": 18.133333
+      "seconds": 18.133333,
+      "id": "p20_charging_wait",
+      "project": "vic",
+      "watch": "watch.html?clip=p20_charging_wait"
     },
     {
-      "page": 16,
+      "page": 17,
       "file": "assets/videos/p16_robot_tracking.mp4",
       "poster": "assets/posters/p16_robot_tracking.jpg",
       "title": "여러 로봇의 위치와 경로 추적",
@@ -264,13 +345,42 @@
       "topology": {
         "nodes": 17,
         "edges": 20
-      }
+      },
+      "id": "p16_robot_tracking",
+      "project": "vic",
+      "watch": "watch.html?clip=p16_robot_tracking"
+    },
+    {
+      "id": "p19_command_completion",
+      "page": 19,
+      "file": "assets/videos/p19_command_completion.mp4",
+      "poster": "assets/posters/p19_command_completion.jpg",
+      "title": "명령 완료 조건 확인과 후속 실행",
+      "environment": "실제 FMS 실행 · 가상 로봇과 테스트 입력 · 2026.09.21 녹화",
+      "kind": "main",
+      "seconds": 22.16,
+      "project": "vic",
+      "watch": "watch.html?clip=p19_command_completion",
+      "sha256": "6c5c7f8813622cb9ede6e972b51e9a6dab3725b370774ba55e2034eb14839abf"
+    },
+    {
+      "id": "p23_virtual_robot_validation",
+      "page": 23,
+      "file": "assets/videos/p23_virtual_robot_validation.mp4",
+      "poster": "assets/posters/p23_virtual_robot_validation.jpg",
+      "title": "가상 로봇 · 배터리와 전복 상태 검증",
+      "environment": "실제 FMS 실행 · 가상 로봇과 테스트 입력 · 2026.09.21 녹화",
+      "kind": "main",
+      "seconds": 24.28,
+      "project": "vic",
+      "watch": "watch.html?clip=p23_virtual_robot_validation",
+      "sha256": "cb56ddcd02437efca497206cb2b5be2d745dba5f92359f3dd97af967b1850f66"
     }
   ],
   "pending_review_pages": [],
   "download": {
-    "file": "assets/documents/park-junsu-portfolio.pdf",
-    "format": "pdf",
-    "source": "portfolio_v9/포트폴리오.pdf"
+    "file": "assets/documents/park-junsu-portfolio-v9.pptx",
+    "format": "pptx",
+    "source": "포트폴리오.pptx"
   }
 }
